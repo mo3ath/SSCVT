@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">SSCVT</string>
+
+    <!--  Menu items -->
+    <string name="settings">الإعدادات</string>
+    <string name="refresh">تحديث</string>
+    <string name="menu">القائمة</string>
+    
+    <!--  Main Activity -->
+    <string name="events_button">أنشطة النادي</string>
+    <string name="ads_button">الإعلانات</string>
+    <string name="gallery_button">ألبوم الصور</string>
+    <string name="prayer_button">أوقات الصلاة</string>
+    <string name="contact_button">إتصل بنا</string>
+    
+
+    <!--  Ads Activity -->
+    <string name="updating">جاري تحديث البيانات...</string>
+    <string name="update_successful">تم التحديث بنجاح</string>
+    <string name="connection_error">تعذر الوصول. تأكد من إتصال الإنترنت لديك</string>
+    <string name="xml_error">حصل خطأ. راجع الموقع</string>
+    
+    <!--  Prayer Activity -->
+    <string name="fajr">الفجر</string>
+    <string name="duhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="magrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="friday">الجمعة</string>
+    <string name="prayer">الصلاة</string>
+    <string name="athan">الأذان</string>
+    <string name="iqama">الإقامة</string>
+    
+     <!--  Arrivals Activity -->
+    <string name="full_name">الاسم باللغة الإنجليزية</string>
+    <string name="full_name_error">* الرجاء كتابة الإسم</string>
+    <string name="gender">الجنس</string>
+    <string name="gender_error">* الرجاء الإختيار</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+  	<string name="phone_num">رقم الجوال</string>
+  	<string name="phone_num_error">* رقم الجوال غير صحيح</string>
+  	<string name="email">البريد الالكتروني</string>
+  	<string name="email_error">* الرجاء التأكد من البريد الالكتروني</string>
+  	<string name="hotel">هل قمت بحجز فندق أو سكن في بلدة بلاكسبيرغ أو ما جاورها</string>
+  	<string name="hotel_error">* الرجاء الإختيار</string>
+  	<string name="yes">نعم</string>
+  	<string name="no">لا</string>
+  	<string name="next">التالي</string>
+  	
+  	 <!--  Arrivals2 Activity -->
+    <string name="address_line_1">عنوان الفندق</string>
+    <string name="address_line_2">سطر إضافي للعنوان</string>
+    <string name="city">المدينة</string>
+    <string name="state">الولاية</string>
+  	<string name="zip">الصندوق البريدي</string>
+  	<string name="country">الدولة</string>
+  	
+  	 <!--  Arrivals3 Activity -->
+  	<string name="escorts">عدد المرافقين</string>
+    <string name="children">إذا كان هناك أطفال بين المرافقين، نرجو إعطاء بعض المعلومات عن عددهم و أعمارهم</string>
+    <string name="bags">عدد حقائب السفر</string>  
+    <string name="arrival_date">تاريخ الوصول</string>
+    <string name="arrival_time">وقت الوصول</string>
+    <string name="arrival_place">مكان الوصول</string>
+    <string name="ticket_number">رقم الرحلة إن وجد</string>
+    <string name="ticket_picture">صورة من تذكرة السفر إن أمكن</string>
+    <string name="send_button">أرسل</string>
+    
+    <!--  Info Activity -->
+    <string name="arrivals_button">القادمين الجدد</string>
+    <string name="profile_button">بياناتي</string>
+    <string name="holiday_button">حجز فندق</string>
+    <string name="guide_button">دليل المدينة</string>
+
+  	<string name="correct_erros">الرجاء التأكد من صحة البيانات</string>
+  	<string name="email_sent">تم الإرسال</string>
+  	<string name="email_not_sent">تعذر الإرسال. الرجاء التحقق من توفر الاتصال بالإنترنت</string>
+  	<string name="sending_email">جاري الإرسال. . .</string>
+  	<string name="ok">موافق</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "black">#000000</color>
+    <color name = "white">#ffffff</color>
+    <color name = "red">#FF0000</color>
+    
+    <color name = "background">#f4f3e6</color>
+    <color name = "list_item_default">#E3E5DD</color>
+    <color name = "list_item_hover">#F2F3ED</color>
+    <color name = "list_item_border">#EDEADA</color>
+    <color name = "actionbar_title">#f4f3e6</color>
+    
+</resources>

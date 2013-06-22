@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:focusableInTouchMode="true"
+	android:background="@color/background">
+
+    
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="@string/next" />
+    
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_next" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            	<!-- *********** Full Name ***********  -->
+
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/nameTextView"
+					        android:text="@string/full_name" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/nameEditText"
+					        android:inputType="textPersonName"
+					        style="@style/EditTextRoundStyle" />
+					    <TextView
+					        android:id="@+id/nameErrorTextView"
+					        android:text="@string/full_name_error"
+					        style="@style/TextViewErrorStyle"/>
+	            </LinearLayout>
+
+			    
+			
+			    <!-- *********** Gender  *********** -->
+			    <LinearLayout
+		            style="@style/FieldLayoutStyle">
+				    <TextView
+				        android:id="@+id/genderTextView"
+				        android:text="@string/gender" 
+				        style="@style/TextViewStyle"/>
+				    <RadioGroup android:id="@+id/genderRadioGroup"
+				        android:gravity="right"
+				        android:orientation="horizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+					    
+            
+            		<RadioButton
+					        android:id="@+id/maleRadioButton"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:button="@null"
+					        android:drawableRight="@android:drawable/btn_radio"
+					        android:text="@string/male" />
+
+					    <RadioButton
+					        android:id="@+id/femaleRadioButton"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_gravity="left"
+					        android:button="@null"
+					        android:drawableRight="@android:drawable/btn_radio"
+					        android:text="@string/female" />
+				     </RadioGroup>
+				     
+				    
+				     <TextView
+				        android:id="@+id/genderErrorTextView"
+				        android:text="@string/gender_error"
+				        style="@style/TextViewErrorStyle"/>
+			     </LinearLayout>
+			     
+			    <!-- *********** Mobile *********** -->
+			    <LinearLayout
+		            style="@style/FieldLayoutStyle">
+				    <TextView
+				        android:id="@+id/mobileTextView"
+				        android:text="@string/phone_num"
+				        style="@style/TextViewStyle"/>
+				    <EditText
+				        android:id="@+id/mobielEditText"
+				        style="@style/EditTextRoundStyle"
+				        android:inputType="phone"
+				        android:maxLength="10" />
+				    <TextView
+				        android:id="@+id/mobileErrorTextView"
+				        android:text="@string/phone_num_error"
+				        style="@style/TextViewErrorStyle"/>
+			     </LinearLayout>
+			
+			    <!-- *********** Email *********** -->
+			    <LinearLayout
+		            style="@style/FieldLayoutStyle">
+				    <TextView
+				        android:id="@+id/emailTextView"
+				        android:text="@string/email"
+				        style="@style/TextViewStyle"/>
+				    <EditText
+				        android:id="@+id/emailEditText"
+				        style="@style/EditTextRoundStyle"
+				        android:inputType="textEmailAddress" />
+				    <TextView
+				        android:id="@+id/emailErrorTextView"
+				        android:text="@string/email_error"
+				        style="@style/TextViewErrorStyle"/>
+			     </LinearLayout>
+
+
+			     <!-- *********** Hotel?  *********** -->
+			     <LinearLayout
+		            style="@style/FieldLayoutStyle">
+				    <TextView
+				        android:id="@+id/hotelTextView"
+				        android:text="@string/hotel" 
+				        style="@style/TextViewStyle"/>
+				    <RadioGroup android:id="@+id/hotelRadioGroup"
+				        android:gravity="right"
+				        android:orientation="horizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+					    <RadioButton
+					        android:id="@+id/yesRadioButton"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/yes" />
+					    <RadioButton
+					        android:id="@+id/noRadioButton"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/no" />
+				     </RadioGroup>
+				     <TextView
+				        android:id="@+id/hotelErrorTextView"
+				        android:text="@string/hotel_error"
+				        style="@style/TextViewErrorStyle"/>
+			     </LinearLayout>
+			     
+			     <!-- *********** Next button  *********** -->
+			    
+			    </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

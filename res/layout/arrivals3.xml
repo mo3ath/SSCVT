@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:focusableInTouchMode="true"
+	android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:orientation="vertical">
+	            
+	            <!-- *********** Escorts ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/escortsTextView"
+					        android:text="@string/escorts" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/escortsEditText"
+					        android:inputType="number"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+	            <!-- *********** Children ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/childrenTextView"
+					        android:text="@string/children" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/childrenEditText"
+					        android:inputType="textPostalAddress"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+	             <!-- *********** Bags ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/bagsTextView"
+					        android:text="@string/bags" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/bagsEditText"
+					        android:inputType="number"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+	            <!-- *********** Arrival Date ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/arrivalDateTextView"
+					        android:text="@string/arrival_date" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/arrivalDateEditText"
+					        android:inputType="textPostalAddress"
+					        android:focusable="false"
+					        android:onClick="onClick"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+	            <!-- *********** Arrival Time ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/arrivalTimeTextView"
+					        android:text="@string/arrival_time" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/arrivalTimeEditText"
+					        android:inputType="textPostalAddress"
+					        android:focusable="false"
+					        android:onClick="onClick"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+	            <!-- *********** Arrival Place ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/arrivalPlaceTextView"
+					        android:text="@string/arrival_place" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/arrivalPlaceEditText"
+					        android:inputType="textPostalAddress"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+			     
+	            <!-- *********** Ticket Number ***********  -->
+	            <LinearLayout
+		            style="@style/FieldLayoutStyle">
+		                <TextView
+					        android:id="@+id/ticketNumberTextView"
+					        android:text="@string/ticket_number" 
+					        style="@style/TextViewStyle"/>
+					    <EditText
+					        android:id="@+id/ticketNumberEditText"
+					        android:inputType="textPostalAddress"
+					        style="@style/EditTextRoundStyle"/>
+	            </LinearLayout>
+	            
+			     <!-- *********** Send button  *********** -->
+			    <Button
+			        android:id="@+id/btn_send"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginTop="16dp"
+			        android:text="@string/send_button"
+			        android:onClick="onClick" />
+			    
+			    </LinearLayout>
+
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:focusableInTouchMode="true"
+	android:background="@color/background">
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="@string/next" />
+    
+    <ScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_next" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- *********** Line 1 *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/line1TextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/address_line_1" />
+
+                <EditText
+                    android:id="@+id/line1EditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- *********** Line 2 *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/line2TextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/address_line_2" />
+
+                <EditText
+                    android:id="@+id/line2EditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- *********** City *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/cityTextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/city" />
+
+                <EditText
+                    android:id="@+id/cityEditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- *********** State *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/stateTextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/state" />
+
+                <EditText
+                    android:id="@+id/stateEditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- *********** Zip code *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/zipTextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/zip" />
+
+                <EditText
+                    android:id="@+id/zipEditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!-- *********** Country *********** -->
+
+            <LinearLayout style="@style/FieldLayoutStyle" >
+
+                <TextView
+                    android:id="@+id/countryTextView"
+                    style="@style/TextViewStyle"
+                    android:text="@string/country" />
+
+                <EditText
+                    android:id="@+id/countryEditText"
+                    style="@style/EditTextRoundStyle"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <!-- *********** Next button  *********** -->
+
+        </LinearLayout>
+
+        
+    </ScrollView>
+    
+</RelativeLayout>

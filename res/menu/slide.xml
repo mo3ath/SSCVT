@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/events_button"
+        android:icon="@drawable/ic_events"
+        android:title="@string/events_button">
+    </item>
+    <item
+        android:id="@+id/gallery_button"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/gallery_button">
+    </item>
+    <item
+        android:id="@+id/ads_button"
+        android:icon="@drawable/ic_ads"
+        android:title="@string/ads_button">
+    </item>
+    <item
+        android:id="@+id/arrivals_button"
+        android:icon="@drawable/ic_arrivals"
+        android:title="@string/arrivals_button">
+    </item>
+    <item
+        android:id="@+id/profile_button"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile_button">
+    </item>
+    <item
+        android:id="@+id/holiday_button"
+        android:icon="@drawable/ic_holiday"
+        android:title="@string/holiday_button">
+    </item>
+    <item
+        android:id="@+id/guide_button"
+        android:icon="@drawable/ic_guide"
+        android:title="@string/guide_button">
+    </item>
+    <item
+        android:id="@+id/prayer_button"
+        android:icon="@drawable/ic_guide"
+        android:title="@string/prayer_button">
+    </item>
+    <item
+        android:id="@+id/contact_button"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/contact_button">
+    </item>
+
+</menu>

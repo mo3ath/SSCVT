@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prayer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <TableLayout
+        android:id="@+id/prayer_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+    	android:background="@color/background"  >
+
+     
+    </TableLayout>
+
+    <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.coboltforge.slidemenu.SlideMenu>
+
+</RelativeLayout>

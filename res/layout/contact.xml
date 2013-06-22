@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@color/background" 
+    android:orientation="vertical">
+    <!--  Phone Button -->
+    <Button
+        android:id="@+id/phone_button"
+        style="@style/ContactButton"
+        android:drawableTop="@drawable/ic_phone"
+        android:onClick="onClick" />
+    
+    <!--  Email Button -->
+    <Button
+        android:id="@+id/email_button"
+        style="@style/ContactButton"
+        android:drawableTop="@drawable/ic_email"
+        android:onClick="onClick"  />
+    
+    
+    <!--  Facebook Button -->
+    <Button
+        android:id="@+id/facebook_button"
+        style="@style/ContactButton"
+        android:drawableTop="@drawable/ic_facebook"
+        android:onClick="onClick" />
+    
+
+         <!--  Youtube Button -->
+    <Button
+        android:id="@+id/youtube_button"
+        style="@style/ContactButton"
+        android:drawableTop="@drawable/ic_youtube"
+        android:onClick="onClick"  />
+ 
+ 
+ 
+ 
+</LinearLayout>
