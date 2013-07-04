@@ -6,11 +6,13 @@
     android:background="@color/background" 
     android:orientation="vertical">
     <!--  Phone Button -->
-    <Button
+
+    <ImageButton
         android:id="@+id/phone_button"
-        style="@style/ContactButton"
-        android:drawableTop="@drawable/ic_phone"
-        android:onClick="onClick" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_phone" />
     
     <!--  Email Button -->
     <Button

@@ -99,9 +99,9 @@ public class CustomAdapter extends BaseAdapter {
 		TextView titleText = (TextView) view.findViewById(R.id.eventsItem);
 		titleText.setText(item.getTitle());
 		//set title's font
-		Typeface tf = Typeface.createFromAsset(context.getAssets(),
-				"fonts/K Farnaz.ttf");
-		titleText.setTypeface(tf);
+		//Typeface tf = Typeface.createFromAsset(context.getAssets(),
+		//		"fonts/K Farnaz.ttf");
+		//titleText.setTypeface(tf);
 		// set date
 		TextView dateText = (TextView) view.findViewById(R.id.eventsDate);
 		dateText.setText(item.getDate());
@@ -109,7 +109,7 @@ public class CustomAdapter extends BaseAdapter {
 		ImageView expandIcon = (ImageView) view.findViewById(R.id.expandIcon);
 
 		// animate element
-		int startOffset = 100;
+		/*int startOffset = 100;
 		if (groupPosition < wasAnimationShown.size()) {
 			if (!wasAnimationShown.get(groupPosition)) {
 				Animation animation = AnimationUtils.loadAnimation(context,
@@ -118,7 +118,7 @@ public class CustomAdapter extends BaseAdapter {
 				view.startAnimation(animation);
 				wasAnimationShown.set(groupPosition, true);
 			}
-		}
+		}*/
 		return view;
 	}
 	

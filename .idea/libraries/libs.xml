@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/jsoup-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/additionnal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

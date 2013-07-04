@@ -31,7 +31,7 @@ public class Contact extends SherlockActivity{
 				phoneIntent.setData(Uri.parse(uri));
 				startActivity(phoneIntent);
 				break;
-			case R.id.email_button:
+			case R.id.email_button: 
 				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 		        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"sscbvt@gmail.com"});
 		        emailIntent.setType("message/rfc822");

@@ -138,13 +138,14 @@ public class Ads extends SherlockActivity implements
 		} else {
 			new dataBaseTask().execute("");
 		}
+		setupActionBar();
 	}
 
 	@Override
 	protected void onStart() {
 		super.onStart();
 
-		setupActionBar();
+		
 	}
 
 	// Uses AsyncTask subclass to download the XML feed from stackoverflow.com.
@@ -379,6 +380,7 @@ public class Ads extends SherlockActivity implements
 			}
 			// -------------------
 			Log.d(TAG, "database: finished reading from database");
+			
 			edb.close();
 		}
 
@@ -513,9 +515,8 @@ public class Ads extends SherlockActivity implements
 		handler.postDelayed(new Runnable() {
 			public void run() {
 				switch (itemId) {
-				case R.id.events_button:
+				case R.id.events_button:	
 					if (currentActivity == ADS) {
-
 						Intent intent = new Intent(getBaseContext(), Ads.class);
 						Bundle b = new Bundle();
 						b.putInt("activity", EVENTS);
@@ -533,7 +534,10 @@ public class Ads extends SherlockActivity implements
 					}
 					break;
 				case R.id.gallery_button:
-					startActivity(new Intent(getBaseContext(), Gallery.class));
+					String galleryUrl = "https://plus.google.com/photos/110394289376222111697/albums?banner=pwa";
+					Intent galleryIntent = new Intent(Intent.ACTION_VIEW);
+					galleryIntent.setData(Uri.parse(galleryUrl));
+					startActivity(galleryIntent);
 					break;
 				case R.id.arrivals_button:
 					startActivity(new Intent(getBaseContext(), Arrivals.class));
@@ -541,7 +545,7 @@ public class Ads extends SherlockActivity implements
 				case R.id.profile_button:
 					break;
 				case R.id.holiday_button:
-					String holidayUrl = "http://www.ihg.com/holidayinn/hotels/us/en/blacksburg/roabb/hoteldetail?_corpId=100272909&ratePreference=ILIK1";
+					String holidayUrl = "http://m.ihg.com/hotels/holidayinn/us/en/modifyhoteldetail/roabb?numberOfAdults=1&rateCode=ILIK1&hotelCode=ROABB&_IATAno=99502056&_corpId=100272909";
 					Intent holidayIntent = new Intent(Intent.ACTION_VIEW);
 					holidayIntent.setData(Uri.parse(holidayUrl));
 					startActivity(holidayIntent);

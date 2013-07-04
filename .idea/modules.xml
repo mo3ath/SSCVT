@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/workspace/LibrarySlideMenu/LibrarySlideMenu.iml" filepath="$USER_HOME$/workspace/LibrarySlideMenu/LibrarySlideMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSCVT.iml" filepath="$PROJECT_DIR$/SSCVT.iml" />
+      <module fileurl="file://$USER_HOME$/workspace/JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" filepath="$USER_HOME$/workspace/JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" />
+    </modules>
+  </component>
+</project>
+
